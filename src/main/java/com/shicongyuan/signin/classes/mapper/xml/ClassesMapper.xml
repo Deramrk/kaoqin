@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shicongyuan.signin.classes.mapper.ClassesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shicongyuan.signin.classes.model.Classes">
+        <id column="cid" property="cid" />
+        <result column="print_time" property="printTime" />
+        <result column="break_time" property="breakTime" />
+        <result column="clock_frequency" property="clockFrequency"/>
+        <result column="clock_settings" property="clockSettings" />
+        <result column="elastic_clock" property="elasticClock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cid, print_time, break_time,clock_frequency,clock_settings,elastic_clock
+    </sql>
+
+</mapper>

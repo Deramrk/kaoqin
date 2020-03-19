@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shicongyuan.signin.attendanceGroup.mapper.AttendanceGroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shicongyuan.signin.attendanceGroup.model.AttendanceGroup">
+        <id column="t_id" property="tId" />
+        <result column="t_attendanceman" property="tAttendanceman" />
+        <result column="attendance_controller" property="attendanceController" />
+        <result column="attendance_type" property="attendanceType"/>
+        <result column="work_set" property="workSet" />
+        <result column="special_setup" property="specialSetup" />
+        <result column="localtion_work" property="localtioWork"/>
+        <result column="rules_filed" property="rulesFiled"/>
+        <result column="addwork_rules" property="addworRules"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        t_id, t_attendanceman, attendance_controller,attendance_type,work_set,special_setup,localtion_work,rules_filed,addwork_rules
+    </sql>
+
+</mapper>

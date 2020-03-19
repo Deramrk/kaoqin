@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shicongyuan.signin.attendanceinfo.mapper.AttendanceInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shicongyuan.signin.attendanceinfo.model.AttendanceInfo">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="attendance_name" property="attendanceName" />
+        <result column="attendance_type" property="attendanceType" />
+        <result column="create_time" property="createTime" />
+        <result column="STATU" property="statu" />
+        <result column="ORDERS" property="orders" />
+        <result column="attendance_day" property="attendanceDay" />
+        <result column="rest_day" property="restDay" />
+        <result column="work_day" property="workDay" />
+        <result column="late_count" property="lateCount" />
+        <result column="late_day" property="lateDay" />
+        <result column="absenteeism_count" property="absenteeismCount" />
+        <result column="absenteeism_day" property="absenteeismDay" />
+        <result column="leave_early_count" property="leaveEarlyCount" />
+        <result column="leave_early_day" property="leaveEarlyDay" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, uid, attendance_name, attendance_type, create_time, STATU, ORDERS, attendance_day, rest_day, work_day, late_count, late_day, absenteeism_count, absenteeism_day, leave_early_count, leave_early_day
+    </sql>
+
+</mapper>

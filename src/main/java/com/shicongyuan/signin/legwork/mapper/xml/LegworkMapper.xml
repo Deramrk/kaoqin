@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shicongyuan.signin.legwork.mapper.LegworkMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.shicongyuan.signin.legwork.model.Legwork">
+        <id column="lid" property="lid" />
+        <result column="lname" property="lname" />
+        <result column="pick_group" property="pickGroup" />
+        <result column="can_originator" property="canOriginator" />
+        <result column="manageable_personnel" property="manageablePersonnel" />
+        <result column="examine_explain" property="examineExplain" />
+        <result column="icon" property="icon" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        lid, lname, pick_group , can_originator , manageable_personnel , examine_explain , icon
+    </sql>
+
+</mapper>
